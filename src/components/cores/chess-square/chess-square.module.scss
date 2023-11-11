@@ -1,0 +1,21 @@
+.chess-square {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  padding: 4px;
+  &:hover,&-selected {
+    border: 3px solid red;
+  }
+  &-dark {
+    background-color: var(--primary-color);
+  }
+
+  &-light {
+    background-color: var(--secondary-color);
+  }
+}

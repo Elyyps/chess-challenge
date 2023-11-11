@@ -1,0 +1,19 @@
+.chess-piece {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  > div svg {
+    width: 60px;
+    height: 60px;
+    stroke: black;
+    stroke-width: 10px;
+  }
+  &-small > div svg {
+    height: 55px;
+    width: 55px;
+  }
+}
